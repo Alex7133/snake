@@ -10,7 +10,11 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class MainWindow extends JFrame {
-
+/**
+         * @version 1.0
+         * @author Alejandro Carbonell Soriano
+         */
+    
     JPanel cards;
     String cardDisplayed;
     CardLayout cl;
@@ -42,6 +46,7 @@ public class MainWindow extends JFrame {
         cards.add(s4, "Four");
     }
 
+    
     public MainWindow() {
 
         setVisible(true);

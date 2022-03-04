@@ -4,6 +4,10 @@ import javax.swing.SwingUtilities;
 public class Main {
 
     /**
+         * @version 1.0
+         * @author Alejandro Carbonell Soriano
+         */
+    /**
      * @param args
      */
     public static void main(String[] args) {

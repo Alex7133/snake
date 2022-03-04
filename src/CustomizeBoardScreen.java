@@ -9,7 +9,10 @@ import javax.swing.JPanel;
 
 //needs massive improvements
 public class CustomizeBoardScreen extends JPanel {
-
+    /**
+         * @version 1.0
+         * @author Alejandro Carbonell Soriano
+         */
     JButton go;
     JButton quit;
     MainWindow mw;
@@ -22,6 +25,10 @@ public class CustomizeBoardScreen extends JPanel {
         mw.showCard("Four");
     }
 
+    /**
+     * 
+     * @param mw 
+     */
     public CustomizeBoardScreen(MainWindow mw) {
         this.mw = mw;
 

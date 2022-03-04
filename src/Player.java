@@ -3,6 +3,10 @@ import java.awt.Color;
 
 public class Player {
 
+    /**
+         * @version 1.0
+         * @author Alejandro Carbonell Soriano
+         */
     private String name;
     private int playerPosn;
     private int playerScore;

@@ -14,8 +14,9 @@ import javax.swing.JPanel;
 public class BoardScreen extends JPanel {
 
     /**
-     *
-     */
+         * @version 1.0
+         * @author Alejandro Carbonell Soriano
+         */
     int player = 0;
     BoardDrawing bd;
     JPanel stats;
@@ -56,6 +57,7 @@ public class BoardScreen extends JPanel {
         return maxPlayers;
     }
 
+    
     public void setUpPlayers() {
         players = new ArrayList<Player>();
         for (int i = 0; i < returnMaxPlayers(); i++) {
@@ -76,6 +78,10 @@ public class BoardScreen extends JPanel {
 
     }
 
+    /**
+     * 
+     * @param mw 
+     */
     public BoardScreen(MainWindow mw) {
         this.mw = mw;
 
@@ -141,6 +147,7 @@ public class BoardScreen extends JPanel {
         //may need more functions inside to communicate for this reason
         roll = new JButton("Roll the die!");
         roll.addActionListener(new ActionListener() {
+            
             public void actionPerformed(ActionEvent e) {
                 Random die = new Random();
                 int a = die.nextInt(6) + 1;

@@ -12,6 +12,10 @@ import javax.swing.JRadioButton;
 //needs massive aesthetic rewrites
 public class PlayerSelectScreen extends JPanel {
 
+    /**
+         * @version 1.0
+         * @author Alejandro Carbonell Soriano
+         */
     JButton go;
     JButton quit;
     MainWindow mw;
@@ -30,6 +34,7 @@ public class PlayerSelectScreen extends JPanel {
         mw.showCard("Three");
     }
 
+    
     public void playerOptions() {
         int m = 5;
         if (opt1.isSelected() == true) {
@@ -41,7 +46,10 @@ public class PlayerSelectScreen extends JPanel {
         }
         mw.s4.setMaxPlayers(m);
     }
-
+    /**
+     * 
+     * @param mw 
+     */
     public PlayerSelectScreen(MainWindow mw) {
         this.mw = mw;
 

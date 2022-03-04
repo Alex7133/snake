@@ -11,7 +11,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class WelcomeScreen extends JPanel {
-
+        /**
+         * @version 1.0
+         * @author Alejandro Carbonell Soriano
+         */
     private static final String ARE_YOU_SURE = "Are you sure?";
     private static final String TWO = "Two";
     private static final String NEW__GAME = "New Game";
@@ -37,6 +40,10 @@ public class WelcomeScreen extends JPanel {
         mw.showCard(TWO);
     }
 
+    /**
+     * 
+     * @param mw 
+     */
     public WelcomeScreen(MainWindow mw) {
         this.mw = mw;
 

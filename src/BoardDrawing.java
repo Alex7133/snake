@@ -14,8 +14,9 @@ import javax.swing.JPanel;
 public class BoardDrawing extends JPanel{
 
 	/**
-	 * 
-	 */
+         * @version 1.0
+         * @author Alejandro Carbonell Soriano
+         */
 	int b = 0;
 	int row = 8;
 	int col = 8;
@@ -27,6 +28,12 @@ public class BoardDrawing extends JPanel{
 	
 	
 	
+        /**
+         * 
+         * @param row
+         * @param col
+         * @param bs 
+         */
 	public BoardDrawing(int row, int col,BoardScreen bs){
 		this.bs = bs;
 		
@@ -60,6 +67,10 @@ public class BoardDrawing extends JPanel{
 	
 	}
 	
+        /**
+         * 
+         * @param g 
+         */
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		Graphics2D g2d = (Graphics2D) g;
@@ -168,6 +179,11 @@ public class BoardDrawing extends JPanel{
         g2d.setColor(Color.blue);
     }
 	
+    /**
+     * 
+     * @param pnos
+     * @return 
+     */
 	public String ensurePlayerPosition(int pnos){
 		String message = "";
 		for(Portal port :bs.portals){
